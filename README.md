@@ -3,7 +3,7 @@ a softirq-like irq mechanism special for general-purpose thread level
 ----------
 
 ```sh
-# when first laod the module you will get the following info
+# when first loading the module you will get the following info
 root@cute-meeeow:/mnt/projects/LIRQ# make;make install
 root@cute-meeeow:/mnt/projects/LIRQ# dmesg  |tail
          [ 1005.721218] [x]cpu init worker:0
