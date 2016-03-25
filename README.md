@@ -29,3 +29,6 @@ cpu  1   :       0
 ```
 this is all the thing about LIRQ,this is totally based on general kthread ,so compared with really softirqs ,less prioritized maybe.but in most cases ,it 's OK ,beacause it schedule the tasks in an atomic context since I disable CPU preemption.
 for any questions please drop me a letter: chillancezen@gmail.com or jzheng.bjtu@hotmail.com
+```
+one more limitation:lirq_complete() can not be invoked in a hardware interrupt context
+```
